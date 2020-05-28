@@ -1,7 +1,16 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, white, rgb(205, 205, 243));
+  }
+
 body {
+    margin: auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-self: center;
 }
 
 main {
@@ -11,4 +20,39 @@ main {
 section {
     max-width: 800px;
     margin: 50px auto;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6vh 6vh auto;
+    grid-template-areas:
+    "polarity"
+    "subjectivity"
+    "text"
+}
+.polarity {
+    padding: 3vh;
+    grid-area: polarity;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Cuprum', sans-serif;
+}
+.subjectivity {
+    padding: 3vh;
+    grid-area: subjectivity;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Cuprum', sans-serif;
+}
+.text-sample {
+    padding: 6vh;
+    width: 80%;
+    grid-area: text;
+    justify-self: center;
+    color: darkblue;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 1.5em;
 }

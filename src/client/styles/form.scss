@@ -11,3 +11,21 @@ input {
     line-height: 40px;
     margin: 10px 0;
 }
+
+.submit-button {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 40px;
+    margin: 10px 0;
+    font-size: 2em;
+    color: #fff;
+    background-color: #4CAF50;
+    &:hover {
+        background-color: #3e8e41
+    }
+    &:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+}

@@ -1,5 +1,14 @@
-header {
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.title {
     display: flex;
     justify-content: space-between;
+    justify-self: center;
     padding: 10px 40px;
+    font-family: 'Bangers', cursive;
+    font-size: 3em;
 }
